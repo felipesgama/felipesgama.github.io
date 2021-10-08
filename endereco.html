@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Praticando com JS</h2>
+<p id="demo"></p>
+<script>
+class Endereco {
+  constructor(cep, bairro) {
+    this.cep = cep;
+    this.bairro = bairro;
+  }
+  imprimir() {
+    return "cep: "+this.cep+" Bairro "+this.bairro;
+  }
+}
+
+let end = new Endereco("51254444-340", "Potengi");
+document.getElementById("demo").innerHTML=end.imprimir();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Praticando com JS</h2>
+<p id="demo"></p>
+<script>
+class Endereco {
+  constructor(cep, bairro) {
+    this.cep = cep;
+    this.bairro = bairro;
+  }
+  imprimir() {
+    return "cep: "+this.cep+" Bairro "+this.bairro;
+  }
+}
+class Empresa {
+  constructor(razaoSocial,nomeFantasia,endereco) {
+    this.razaoSocial = razaoSocial;
+    this.nomeFantasia = nomeFantasia;
+    this.endereco = endereco;
+  }
+  imprimir() {
+    return " Empresa "+this.razaoSocial+" têm o cep "+this.endereco.cep;
+  }
+}
+
+
+let end = new Endereco("51254444-340", "Potengi");
+let empresa = new Empresa("Incubatech LTDA","Incubatech",end)
+document.getElementById("demo").innerHTML=JSON.stringify(empresa);
+</script>
+
+</body>
+</html>
