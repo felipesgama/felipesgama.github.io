@@ -1,84 +1,415 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="description">
-  <meta name="google" content="notranslate" />
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Felipe Gama · CTO @ Faceponto · Dr. Eng. de Computação</title>
+  <meta name="description" content="Felipe Gama — CTO da Faceponto, plataforma de ponto eletrônico com reconhecimento facial e gestão de RH com IA generativa. Doutor em Engenharia de Computação pela UFRN.">
+  <meta name="author" content="Felipe Gama">
+  <meta name="theme-color" content="#0a0b10">
+  <link rel="canonical" href="https://felipesgama.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-  <link href="./assets/favicon.ico" rel="icon">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Felipe Gama · CTO @ Faceponto">
+  <meta property="og:description" content="Arquitetura, IA generativa e escala para o RH brasileiro. Dr. Eng. de Computação (UFRN).">
+  <meta property="og:url" content="https://felipesgama.github.io/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/27032794?v=4">
+  <meta name="twitter:card" content="summary">
 
-  <title>Title page</title>  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Felipe Gama",
+    "jobTitle": "Chief Technology Officer",
+    "worksFor": { "@type": "Organization", "name": "Faceponto", "url": "https://faceponto.com.br" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidade Federal do Rio Grande do Norte" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Natal", "addressRegion": "RN", "addressCountry": "BR" },
+    "url": "https://felipesgama.github.io/",
+    "sameAs": ["https://github.com/felipesgama"]
+  }
+  </script>
 
-<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<body class="minimal">
-<div id="site-border-left"></div>
-<div id="site-border-right"></div>
-<div id="site-border-top"></div>
-<div id="site-border-bottom"></div>
-<!-- Add your content of header -->
-<header>
-  <nav class="navbar  navbar-fixed-top navbar-inverse">
-    <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-          <li><a href="./index.html" title="">01 : Home</a></li>
-          <li><a href="./works.html" title="">02 : Works</a></li>
-          <li><a href="./about.html" title="">03 : About me</a></li>
-          <li><a href="./contact.html" title="">04 : Contact</a></li>
-          <li><a href="./components.html" title="">05 : Components</a></li>
-        </ul>
-
-
-      </div> 
+  <header class="nav" id="topo">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="#topo" aria-label="Início">
+        <span class="nav__logo" aria-hidden="true">FG</span>
+        <span>felipe<span class="accent">.gama</span></span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+      <nav id="menu" class="nav__menu" aria-label="Principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#faceponto">Faceponto</a>
+        <a href="#arquitetura">Arquitetura</a>
+        <a href="#midia">Na mídia</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a class="btn btn--sm" href="https://github.com/felipesgama" target="_blank" rel="noopener">GitHub</a>
+      </nav>
     </div>
-  </nav>
-</header>
-<!-- Add your site or app content here -->
-  <div class="hero-full-container background-image-container white-text-container" style="background-image: url('./assets/images/space.jpg')">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="hero-full-wrapper">
-            <div class="text-content">
-              <h1>Hello,<br>
-                <span id="typed-strings">
-                  <span>I'm James Dean</span>
-                  <span>French Designer</span>
-                  <span>Working as a Freelance</span>
-                </span>
-                <span id="typed"></span>
-              </h1>
-            </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> CTO @ Faceponto · Natal/RN</p>
+          <h1>
+            Felipe Gama<br>
+            <span class="gradient">IA generativa e escala<br>para o RH brasileiro.</span>
+          </h1>
+          <p class="lead">
+            Doutor em Engenharia de Computação pela UFRN e CTO da
+            <a href="https://faceponto.com.br" target="_blank" rel="noopener">Faceponto</a>.
+            Responsável pela arquitetura e pelo desenvolvimento da plataforma que leva ponto eletrônico
+            com reconhecimento facial, compliance trabalhista e agentes de IA a mais de
+            <strong>2.700 empresas</strong> no Brasil.
+          </p>
+          <div class="hero__cta">
+            <a class="btn" href="#faceponto">Conheça o trabalho</a>
+            <a class="btn btn--ghost" href="https://aws.amazon.com/pt/blogs/aws-brasil/como-a-faceponto-esta-transformando-a-gestao-de-rh-com-ia-generativa-usando-amazon-bedrock-e-amazon-nova/" target="_blank" rel="noopener">
+              Case no blog da AWS ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__card reveal" aria-hidden="true">
+          <div class="terminal">
+            <div class="terminal__bar"><i></i><i></i><i></i><span>~/faceponto — cto.ts</span></div>
+<pre class="terminal__body"><code><span class="k">const</span> <span class="v">cto</span> = {
+  name: <span class="s">"Felipe Gama"</span>,
+  role: <span class="s">"CTO @ Faceponto"</span>,
+  degree: <span class="s">"Dr. Eng. de Computação · UFRN"</span>,
+  cloud: <span class="s">"AWS desde 2014"</span>,
+  focus: [
+    <span class="s">"Arquitetura serverless"</span>,
+    <span class="s">"Agentes de IA (Bedrock)"</span>,
+    <span class="s">"Visão computacional"</span>,
+    <span class="s">"Compliance trabalhista"</span>,
+  ],
+  shipping: <span class="s">"Lexia 🤖"</span>,
+};<span class="cursor">▍</span></code></pre>
+          </div>
+          <img class="hero__avatar" src="https://avatars.githubusercontent.com/u/27032794?v=4" alt="" width="88" height="88" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- MÉTRICAS -->
+    <section class="metrics" aria-label="Números da Faceponto">
+      <div class="container metrics__grid">
+        <div class="metric reveal"><strong data-count="2700" data-suffix="+">2.700+</strong><span>empresas usando a plataforma</span></div>
+        <div class="metric reveal"><strong data-count="12000" data-suffix="+">12.000+</strong><span>colaboradores em uma única operação</span></div>
+        <div class="metric reveal"><strong data-count="350" data-suffix="+">350+</strong><span>convenções coletivas mapeadas</span></div>
+        <div class="metric reveal"><strong>4h → 2min</strong><span>triagem de 30 currículos com a Lexia</span></div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="container two-col">
+        <div class="reveal">
+          <p class="eyebrow">01 · Sobre</p>
+          <h2>Da pesquisa acadêmica à plataforma em produção.</h2>
+        </div>
+        <div class="reveal prose">
+          <p>
+            Sou CTO da Faceponto, startup potiguar fundada em 2018 que nasceu para resolver uma dor real:
+            acompanhar, em tempo real, a jornada de colaboradores terceirizados espalhados pelo Brasil.
+            Hoje a plataforma vai do registro de ponto com reconhecimento facial à gestão completa de RH —
+            EPI, clima organizacional, folha, recrutamento inteligente e assistente jurídica com IA.
+          </p>
+          <p>
+            Doutor em Engenharia de Computação pela UFRN, trabalho com AWS desde 2014 e lidero o time técnico
+            que desenha a arquitetura, a infraestrutura e os agentes de IA generativa da plataforma —
+            atendendo de empresas com 10 colaboradores a operações com mais de 12.000.
+          </p>
+          <ul class="tags" aria-label="Áreas de atuação">
+            <li>Arquitetura de software</li><li>Cloud AWS</li><li>Serverless</li><li>IA generativa</li>
+            <li>Sistemas multiagente</li><li>RAG</li><li>Visão computacional</li><li>Liderança técnica</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACEPONTO -->
+    <section class="section section--alt" id="faceponto">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">02 · Faceponto</p>
+          <h2>Ponto inteligente, segurança jurídica e gestão de RH em uma só plataforma.</h2>
+          <p class="muted">Sistema de ponto eletrônico REP-P em conformidade com a Portaria MTE nº 671 e o Decreto nº 10.854.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">◉</div>
+            <h3>Reconhecimento facial</h3>
+            <p>Validação biométrica com IA em cada marcação, pelo celular ou tablet coletivo, contra fraudes na jornada.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">⌖</div>
+            <h3>Cerca digital</h3>
+            <p>Georreferenciamento delimita onde o colaborador pode bater ponto. Funciona offline e sincroniza depois.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">§</div>
+            <h3>Compliance automatizado</h3>
+            <p>70+ regimes de jornada e 350+ convenções coletivas parametrizadas. AFD, AEJ e espelho de ponto com assinatura digital.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">⧗</div>
+            <h3>Banco de horas & escalas</h3>
+            <p>Cálculo automático de banco de horas, escalas como 12x36, férias, contracheque e entrega de EPI.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">▤</div>
+            <h3>Inteligência de negócio</h3>
+            <p>Dashboards de RH e SESMT, turnover, horas extras, risco trabalhista e alertas de cota PCD e Jovem Aprendiz.</p>
+          </article>
+          <article class="card card--highlight reveal">
+            <div class="card__icon" aria-hidden="true">✦</div>
+            <h3>Lexia — IA para o RH</h3>
+            <p>Assistente de IA generativa (“lex” + “IA”) para CLT, recrutamento, análise DISC, áudio e documentos jurídicos — inclusive via WhatsApp.</p>
+          </article>
+        </div>
+
+        <div class="impact reveal">
+          <h3>Impacto medido em campo</h3>
+          <p class="muted">Estudo de caso UFRN (PPgCTI, 2022) — aplicação do Faceponto em uma empresa de terceirização, dados de 2018 a 2020:</p>
+          <div class="impact__grid">
+            <div><strong>−92%</strong><span>demandas trabalhistas sobre controle de jornada</span></div>
+            <div><strong>−85%</strong><span>consumo de papel</span></div>
+            <div><strong>−25%</strong><span>consumo de energia</span></div>
+            <div><strong>−22%</strong><span>despesas de pessoal em RH/DP</span></div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- ARQUITETURA -->
+    <section class="section" id="arquitetura">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">03 · Arquitetura</p>
+          <h2>Lexia: arquitetura multiagente e multimodelo na AWS.</h2>
+          <p class="muted">
+            Cada agente usa o modelo mais adequado à tarefa, sobre uma camada serverless desacoplada —
+            trocar de modelo é mudar uma variável de ambiente, sem redeploy.
+          </p>
+        </div>
+
+        <div class="arch reveal" role="img" aria-label="Diagrama: canais (Dashboard, App, WhatsApp) chegam ao orquestrador serverless com AWS Lambda e Amazon SNS/SQS, que aciona agentes no Amazon Bedrock (Claude, Amazon Nova Pro, DeepSeek), serviços Amazon Textract e Transcribe, e a base de conhecimento Bedrock Knowledge Bases sobre Aurora PostgreSQL com pgvector.">
+          <div class="arch__col">
+            <span class="arch__label">Canais</span>
+            <div class="node">Dashboard RH</div>
+            <div class="node">App colaborador</div>
+            <div class="node">WhatsApp</div>
+          </div>
+          <div class="arch__arrow" aria-hidden="true">→</div>
+          <div class="arch__col">
+            <span class="arch__label">Orquestração</span>
+            <div class="node node--aws">AWS Lambda</div>
+            <div class="node node--aws">Amazon SNS / SQS</div>
+            <div class="node node--aws">Bedrock Agents · AgentCore</div>
+          </div>
+          <div class="arch__arrow" aria-hidden="true">→</div>
+          <div class="arch__col arch__col--wide">
+            <span class="arch__label">Agentes especializados</span>
+            <div class="agent"><b>Triagem de currículos</b><small>Textract + Claude</small></div>
+            <div class="agent"><b>Chat Lexia &amp; DISC</b><small>Claude</small></div>
+            <div class="agent"><b>Documentos jurídicos</b><small>Amazon Nova Pro</small></div>
+            <div class="agent"><b>Petições trabalhistas</b><small>DeepSeek</small></div>
+            <div class="agent"><b>Áudio pt-BR</b><small>Amazon Transcribe</small></div>
+          </div>
+          <div class="arch__arrow" aria-hidden="true">→</div>
+          <div class="arch__col">
+            <span class="arch__label">Conhecimento (RAG)</span>
+            <div class="node node--aws">Bedrock Knowledge Bases</div>
+            <div class="node node--db">Aurora PostgreSQL + pgvector</div>
+          </div>
+        </div>
+
+        <div class="results">
+          <div class="result reveal"><strong>99,17%</strong><span>ganho de eficiência na triagem (4h → 2min)</span></div>
+          <div class="result reveal"><strong>+95%</strong><span>velocidade de contratação</span></div>
+          <div class="result reveal"><strong>−50%</strong><span>tempo até a primeira entrevista</span></div>
+        </div>
+
+        <blockquote class="quote reveal">
+          <p>“O Amazon Bedrock nos deu a liberdade de experimentar com diferentes modelos e encontrar o equilíbrio ideal entre qualidade, latência e custo. Não precisamos nos preocupar com infraestrutura — focamos no produto.”</p>
+          <cite>— Felipe Gama, no blog oficial da AWS Brasil</cite>
+        </blockquote>
+
+        <div class="stack reveal">
+          <h3>Stack</h3>
+          <ul class="tags">
+            <li>AWS Lambda</li><li>Amazon Bedrock</li><li>Bedrock AgentCore</li><li>Knowledge Bases</li>
+            <li>Amazon Aurora PostgreSQL</li><li>pgvector</li><li>Amazon SNS</li><li>Amazon SQS</li>
+            <li>Amazon Textract</li><li>Amazon Transcribe</li><li>Amazon S3</li><li>CloudFront</li>
+            <li>Anthropic Claude</li><li>Amazon Nova</li><li>DeepSeek</li><li>React</li><li>TypeScript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÍDIA -->
+    <section class="section section--alt" id="midia">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">04 · Na mídia</p>
+          <h2>Destaques e publicações.</h2>
+        </div>
+
+        <a class="feature reveal" href="https://aws.amazon.com/pt/blogs/aws-brasil/como-a-faceponto-esta-transformando-a-gestao-de-rh-com-ia-generativa-usando-amazon-bedrock-e-amazon-nova/" target="_blank" rel="noopener">
+          <div class="feature__meta">
+            <span class="badge">AWS Blog · Brasil</span>
+            <time datetime="2026-05-14">14 mai 2026</time>
+          </div>
+          <h3>Como a Faceponto está transformando a gestão de RH com IA generativa usando Amazon Bedrock e Amazon Nova</h3>
+          <p>
+            Case oficial da AWS, em coautoria com Daniel Abib (Sr. Specialist SA, AWS). Mostra a arquitetura multiagente
+            da Lexia liderada pelo time técnico da Faceponto: triagem de currículos de 4 horas para 2 minutos,
+            RAG com Aurora + pgvector e troca de modelos sem redeploy.
+          </p>
+          <span class="link">Ler artigo completo ↗</span>
+        </a>
+
+        <ul class="press">
+          <li class="reveal">
+            <a href="https://blogdajuliska.com.br/startup-brasileira-faceponto-ganha-destaque-mundial-da-amazon-por-solucao-de-ia-que-revoluciona-o-rh" target="_blank" rel="noopener">
+              <span class="press__src">Blog da Juliska</span>
+              Startup brasileira Faceponto ganha destaque mundial da Amazon por solução de IA que revoluciona o RH
+            </a>
+          </li>
+          <li class="reveal">
+            <a href="https://blogdajuliska.com.br/sucesso-internacional-faceponto-conquista-novos-mercados-no-web-summit-2024" target="_blank" rel="noopener">
+              <span class="press__src">Web Summit 2024 · Lisboa</span>
+              Sucesso internacional: Faceponto conquista novos mercados no Web Summit
+            </a>
+          </li>
+          <li class="reveal">
+            <a href="https://blogdajuliska.com.br/startup-do-rn-apresenta-inteligencia-artificial-para-rh-no-maior-evento-de-tecnologia-do-mundo" target="_blank" rel="noopener">
+              <span class="press__src">Blog da Juliska</span>
+              Startup do RN apresenta inteligência artificial para RH no maior evento de tecnologia do mundo
+            </a>
+          </li>
+          <li class="reveal">
+            <a href="https://blogdajuliska.com.br/startup-potiguar-ja-ajudou-empresarios-na-economia-de-mais-de-r-20-milhoes-em-encargos-trabalhistas" target="_blank" rel="noopener">
+              <span class="press__src">Blog da Juliska</span>
+              Startup potiguar já ajudou empresários a economizar mais de R$ 20 milhões em encargos trabalhistas
+            </a>
+          </li>
+          <li class="reveal">
+            <a href="https://blogdajuliska.com.br/sebrae-like-a-boss-startup-potiguar-sai-na-frente-em-selecao-nacional" target="_blank" rel="noopener">
+              <span class="press__src">Sebrae Like a Boss</span>
+              Startup potiguar sai na frente em seleção nacional
+            </a>
+          </li>
+          <li class="reveal">
+            <a href="https://blogdajuliska.com.br/bossa-summit-startup-potiguar-e-selecionada-para-maior-evento-de-investidores-do-brasil" target="_blank" rel="noopener">
+              <span class="press__src">Bossa Summit</span>
+              Faceponto é selecionada para o maior evento de investidores do Brasil
+            </a>
+          </li>
+          <li class="reveal">
+            <a href="https://sigaa.ufrn.br/sigaa/public/programa/noticias_desc.jsf?id=9109&amp;noticia=158140480" target="_blank" rel="noopener">
+              <span class="press__src">UFRN · PPgCTI</span>
+              Efeitos jurídicos e econômicos da aplicação do app Faceponto: um estudo de caso
+            </a>
+          </li>
+          <li class="reveal">
+            <a href="https://faceponto.com.br/noticias/" target="_blank" rel="noopener">
+              <span class="press__src">Faceponto</span>
+              Ver todas as aparições na mídia →
+            </a>
+          </li>
+        </ul>
+
+        <div class="partners reveal">
+          <span class="muted">Investidores e parceiros estratégicos da Faceponto</span>
+          <ul>
+            <li>AWS</li><li>IA² MCTI</li><li>WOW Aceleradora</li><li>Capital Empreendedor Sebrae</li><li>Abrasel</li><li>Incubatech</li><li>Asaas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAJETÓRIA -->
+    <section class="section" id="trajetoria">
+      <div class="container two-col">
+        <div class="reveal">
+          <p class="eyebrow">05 · Trajetória</p>
+          <h2>Uma linha do tempo.</h2>
+        </div>
+        <ol class="timeline">
+          <li class="reveal">
+            <span class="timeline__year">2026</span>
+            <h3>Case oficial no blog da AWS</h3>
+            <p>Arquitetura multiagente da Lexia com Amazon Bedrock, Claude, Amazon Nova e DeepSeek.</p>
+          </li>
+          <li class="reveal">
+            <span class="timeline__year">2024</span>
+            <h3>Web Summit Lisboa</h3>
+            <p>Faceponto conquista novos mercados no maior evento de tecnologia do mundo.</p>
+          </li>
+          <li class="reveal">
+            <span class="timeline__year">Hoje</span>
+            <h3>CTO · Faceponto</h3>
+            <p>Arquitetura e desenvolvimento da plataforma: do app de ponto com reconhecimento facial à suíte completa de RH com IA, em escala nacional.</p>
+          </li>
+          <li class="reveal">
+            <span class="timeline__year">2018</span>
+            <h3>Nasce a Faceponto</h3>
+            <p>Startup potiguar criada para monitorar em tempo real a jornada de equipes terceirizadas distribuídas pelo Brasil.</p>
+          </li>
+          <li class="reveal">
+            <span class="timeline__year">UFRN</span>
+            <h3>Doutorado em Engenharia de Computação</h3>
+            <p>Universidade Federal do Rio Grande do Norte.</p>
+          </li>
+          <li class="reveal">
+            <span class="timeline__year">2014</span>
+            <h3>Início na AWS</h3>
+            <p>Mais de uma década construindo soluções na nuvem AWS.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section cta" id="contato">
+      <div class="container cta__inner reveal">
+        <h2>Vamos conversar sobre tecnologia, IA ou RH?</h2>
+        <p class="muted">Parcerias, palestras, integrações ou oportunidades com a Faceponto.</p>
+        <div class="hero__cta">
+          <a class="btn" href="https://github.com/felipesgama" target="_blank" rel="noopener">github.com/felipesgama</a>
+          <a class="btn btn--ghost" href="https://faceponto.com.br" target="_blank" rel="noopener">faceponto.com.br ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="ano">2026</span> Felipe Gama · Natal/RN</span>
+      <span class="muted">Dados da Faceponto: faceponto.com.br e AWS Blog Brasil.</span>
     </div>
-  </div>
+  </footer>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-     type();
-     movingBackgroundImage();
-  });
-</script>
-
-
-<script type="text/javascript" src="./main.70a66962.js"></script></body>
-
+  <script src="assets/js/main.js" defer></script>
+</body>
 </html>
