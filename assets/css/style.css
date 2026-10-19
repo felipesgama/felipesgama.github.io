@@ -285,8 +285,8 @@ p { margin: 0 0 1em; }
 .feature:hover { text-decoration: none; transform: translateY(-3px); box-shadow: 0 20px 50px -25px rgba(255, 153, 0, .5); }
 .feature h3 { font-size: clamp(1.3rem, 2.4vw, 1.75rem); max-width: 30ch; }
 .feature p { color: var(--muted); max-width: 70ch; }
-.feature__meta { display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem; font-family: var(--mono); font-size: .82rem; color: var(--muted); }
-.badge { padding: .25rem .7rem; border-radius: 999px; background: rgba(255, 153, 0, .15); color: var(--aws); font-weight: 600; }
+.feature__meta { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; margin-bottom: 1rem; font-family: var(--mono); font-size: .82rem; color: var(--muted); }
+.badge { white-space: nowrap; padding: .25rem .7rem; border-radius: 999px; background: rgba(255, 153, 0, .15); color: var(--aws); font-weight: 600; }
 .link { color: var(--aws); font-weight: 600; }
 
 .press { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
@@ -334,3 +334,26 @@ p { margin: 0 0 1em; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- Research ---------- */
+.papers { display: grid; grid-template-columns: 1.15fr 1fr; gap: 1.2rem; margin-bottom: 2rem; }
+.papers > * { min-width: 0; }
+.paper {
+  display: flex; flex-direction: column; padding: 2rem; border-radius: var(--radius); color: var(--text);
+  background: var(--surface); border: 1px solid var(--border);
+  transition: transform .25s ease, border-color .25s ease;
+}
+.paper:hover { text-decoration: none; transform: translateY(-3px); border-color: var(--violet); }
+.paper--featured {
+  background: radial-gradient(circle at 100% 0%, rgba(139, 123, 255, .2), transparent 55%), var(--surface);
+  border-color: rgba(139, 123, 255, .45);
+}
+.paper h3 { font-size: 1.25rem; }
+.paper p { color: var(--muted); font-size: .97rem; }
+.paper__authors { font-size: .9rem !important; }
+.paper__authors b { color: var(--text); }
+.paper__ref { font-family: var(--mono); font-size: .76rem !important; overflow-wrap: anywhere; }
+.paper .link { margin-top: auto; color: var(--violet); }
+.badge--a1 { background: rgba(52, 211, 153, .15); color: #34d399; }
+.badge--phd { background: rgba(139, 123, 255, .16); color: var(--violet); }
+@media (max-width: 860px) { .papers { grid-template-columns: 1fr; } }

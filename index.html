@@ -28,6 +28,13 @@
     "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidade Federal do Rio Grande do Norte" },
     "address": { "@type": "PostalAddress", "addressLocality": "Natal", "addressRegion": "RN", "addressCountry": "BR" },
     "url": "https://felipesgama.github.io/",
+    "subjectOf": {
+      "@type": "ScholarlyArticle",
+      "headline": "Adaptive Wavelet Coding Applied in a Wireless Control System",
+      "isPartOf": "Sensors",
+      "datePublished": "2017-12-13",
+      "sameAs": "https://doi.org/10.3390/s17122901"
+    },
     "sameAs": ["https://github.com/felipesgama"]
   }
   </script>
@@ -53,6 +60,7 @@
         <a href="#sobre">Sobre</a>
         <a href="#faceponto">Faceponto</a>
         <a href="#arquitetura">Arquitetura</a>
+        <a href="#pesquisa">Pesquisa</a>
         <a href="#midia">Na mídia</a>
         <a href="#trajetoria">Trajetória</a>
         <a class="btn btn--sm" href="https://github.com/felipesgama" target="_blank" rel="noopener">GitHub</a>
@@ -136,6 +144,10 @@
             Doutor em Engenharia de Computação pela UFRN, trabalho com AWS desde 2014 e lidero o time técnico
             que desenha a arquitetura, a infraestrutura e os agentes de IA generativa da plataforma —
             atendendo de empresas com 10 colaboradores a operações com mais de 12.000.
+          </p>
+          <p>
+            Na pesquisa, trabalhei com comunicação sem fio para sistemas de controle industriais — codificação wavelet
+            adaptativa sobre IEEE 802.15.4 —, com artigo publicado na revista <em>Sensors</em> (MDPI, Qualis A1).
           </p>
           <ul class="tags" aria-label="Áreas de atuação">
             <li>Arquitetura de software</li><li>Cloud AWS</li><li>Serverless</li><li>IA generativa</li>
@@ -266,11 +278,63 @@
       </div>
     </section>
 
-    <!-- MÍDIA -->
-    <section class="section section--alt" id="midia">
+    <!-- PESQUISA -->
+    <section class="section section--alt" id="pesquisa">
       <div class="container">
         <div class="section__head reveal">
-          <p class="eyebrow">04 · Na mídia</p>
+          <p class="eyebrow">04 · Pesquisa</p>
+          <h2>Comunicação sem fio confiável para a Indústria 4.0.</h2>
+          <p class="muted">
+            No doutorado, pesquisei como tornar redes de sensores sem fio industriais robustas o suficiente
+            para fechar malhas de controle — sem perder eficiência espectral nem compatibilidade com o padrão IEEE 802.15.4.
+          </p>
+        </div>
+
+        <div class="papers">
+          <a class="paper paper--featured reveal" href="https://www.mdpi.com/1424-8220/17/12/2901" target="_blank" rel="noopener">
+            <div class="feature__meta">
+              <span class="badge badge--a1">Qualis A1</span>
+              <span>Sensors · MDPI · 2017</span>
+            </div>
+            <h3>Adaptive Wavelet Coding Applied in a Wireless Control System</h3>
+            <p class="paper__authors"><b>Felipe O. S. Gama</b>, Luiz F. Q. Silveira, Andrés O. Salazar</p>
+            <p>
+              Propõe uma codificação wavelet adaptativa, cuja taxa de código e constelação variam conforme o nível de
+              desvanecimento do canal, e avalia seu uso em uma malha de controle com nós sem fio. Simulações e testes
+              experimentais mostram ganho de desempenho (BER × Eb/N0 e eficiência espectral) em canal Rayleigh variante no tempo.
+            </p>
+            <p class="paper__ref">Sensors 2017, 17(12), 2901 · doi:10.3390/s17122901</p>
+            <span class="link">Ler artigo (open access) ↗</span>
+          </a>
+
+          <a class="paper reveal" href="https://repositorio.ufrn.br/server/api/core/bitstreams/3ca8ec0c-cdba-48d9-8c04-3118f1c8608b/content" target="_blank" rel="noopener">
+            <div class="feature__meta">
+              <span class="badge badge--phd">Tese de doutorado</span>
+              <span>UFRN · 2021</span>
+            </div>
+            <h3>Desenvolvimento de Sistemas de Comunicações Codificados por Wavelets e Baseados no Padrão IEEE 802.15.4 para Sistemas de Controle por Redes de Sensores Sem Fio Industrial</h3>
+            <p>
+              Codificação wavelet sobre a camada física do IEEE 802.15.4 que aumenta a confiabilidade e reduz
+              retransmissões, mantendo interoperabilidade com sistemas legados. Implementada em rádio definido por
+              software (GNU Radio) e validada em bancada com malha de controle real.
+            </p>
+            <p class="paper__ref">PPgEEC/UFRN · Orientador: Prof. Dr. Andrés Ortiz Salazar · Coorientador: Prof. Dr. Luiz Felipe de Queiroz Silveira</p>
+            <span class="link">Ler tese (PDF) ↗</span>
+          </a>
+        </div>
+
+        <ul class="tags" aria-label="Temas de pesquisa">
+          <li>Codificação wavelet</li><li>IEEE 802.15.4</li><li>Redes de sensores sem fio</li><li>Sistemas de controle em rede</li>
+          <li>Desvanecimento Rayleigh</li><li>Diversidade temporal</li><li>Rádio definido por software</li><li>GNU Radio</li><li>Indústria 4.0</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- MÍDIA -->
+    <section class="section" id="midia">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">05 · Na mídia</p>
           <h2>Destaques e publicações.</h2>
         </div>
 
@@ -349,13 +413,18 @@
     </section>
 
     <!-- TRAJETÓRIA -->
-    <section class="section" id="trajetoria">
+    <section class="section section--alt" id="trajetoria">
       <div class="container two-col">
         <div class="reveal">
-          <p class="eyebrow">05 · Trajetória</p>
+          <p class="eyebrow">06 · Trajetória</p>
           <h2>Uma linha do tempo.</h2>
         </div>
         <ol class="timeline">
+          <li class="reveal">
+            <span class="timeline__year">Hoje</span>
+            <h3>CTO · Faceponto</h3>
+            <p>Arquitetura e desenvolvimento da plataforma: do app de ponto com reconhecimento facial à suíte completa de RH com IA, em escala nacional.</p>
+          </li>
           <li class="reveal">
             <span class="timeline__year">2026</span>
             <h3>Case oficial no blog da AWS</h3>
@@ -367,9 +436,9 @@
             <p>Faceponto conquista novos mercados no maior evento de tecnologia do mundo.</p>
           </li>
           <li class="reveal">
-            <span class="timeline__year">Hoje</span>
-            <h3>CTO · Faceponto</h3>
-            <p>Arquitetura e desenvolvimento da plataforma: do app de ponto com reconhecimento facial à suíte completa de RH com IA, em escala nacional.</p>
+            <span class="timeline__year">2021</span>
+            <h3>Doutorado · PPgEEC/UFRN</h3>
+            <p>Tese sobre sistemas de comunicação codificados por wavelets no padrão IEEE 802.15.4 para controle por redes de sensores sem fio industriais.</p>
           </li>
           <li class="reveal">
             <span class="timeline__year">2018</span>
@@ -377,9 +446,9 @@
             <p>Startup potiguar criada para monitorar em tempo real a jornada de equipes terceirizadas distribuídas pelo Brasil.</p>
           </li>
           <li class="reveal">
-            <span class="timeline__year">UFRN</span>
-            <h3>Doutorado em Engenharia de Computação</h3>
-            <p>Universidade Federal do Rio Grande do Norte.</p>
+            <span class="timeline__year">2017</span>
+            <h3>Artigo na revista Sensors (Qualis A1)</h3>
+            <p>“Adaptive Wavelet Coding Applied in a Wireless Control System”, publicado pela MDPI.</p>
           </li>
           <li class="reveal">
             <span class="timeline__year">2014</span>
