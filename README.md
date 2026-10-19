@@ -6,7 +6,7 @@ Site pessoal de **Felipe Gama** — CTO da [Faceponto](https://faceponto.com.br)
 
 ## Destaques
 
-- **Faceponto** — ponto eletrônico com reconhecimento facial (REP-P, Portaria 671) e gestão de RH para 2.700+ empresas.
+- **Faceponto** — ponto eletrônico com reconhecimento facial (REP-P, Portaria 671) e gestão de RH para 3.800+ CNPJs e 100 mil+ colaboradores.
 - **Lexia** — assistente de IA generativa multiagente/multimodelo no Amazon Bedrock (Claude, Amazon Nova, DeepSeek), com RAG em Aurora PostgreSQL + pgvector.
 - **Case AWS** — [Como a Faceponto está transformando a gestão de RH com IA generativa usando Amazon Bedrock e Amazon Nova](https://aws.amazon.com/pt/blogs/aws-brasil/como-a-faceponto-esta-transformando-a-gestao-de-rh-com-ia-generativa-usando-amazon-bedrock-e-amazon-nova/) (AWS Blog Brasil, mai/2026).
 
